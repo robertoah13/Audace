@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2e6de; /* Cor suave para combinar com o estilo das artes */
+    color: #3a2e29; /* Cor que dá contraste elegante */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #3a2e29; /* Cor do topo para contraste */
+    gap: 20px;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 0;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: 100%; /* Logo abaixo do item principal */
+    left: 0;
+    background-color: #3a2e29;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #f2e6de;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.dropdown-menu li a:hover {
+    color: #c55a5a; /* Cor de destaque ao passar o mouse */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostrar o menu ao passar o mouse */
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2e6de;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #c55a5a; /* Cor de destaque ao passar o mouse */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('../images/Patterns1.png') center/cover no-repeat; /* Imagem de fundo para a seção hero */
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: 'Georgia', serif; /* Fonte elegante similar ao estilo das artes */
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.sobre, .servicos, .contato {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre h2, .servicos h2, .contato h2, .servico-detalhe h2 {
+    font-size: 2.5em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servico-detalhe p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center; /* Alinhamento dos parágrafos <p> nas páginas dos serviços */
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center; /* Alinhamento dos parágrafos <p> */
+}
+
+.servicos .servico-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.servicos .servico-card.visible {
+    opacity: 1;
+}
+
+.servicos .servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a2e29;
+    color: #f2e6de;
+    margin-top: 50px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #c55a5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato button:hover {
+    background-color: #8c3a3a;
+}
