@@ -229,14 +229,27 @@ footer {
     cursor: pointer;
 }
 
-/* Exibir o botão apenas em telas menores */
+/* Esconder elementos em dispositivos desktop/móveis */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Exibir ou ocultar com media query para dispositivos móveis */
 @media (max-width: 768px) {
-    .menu-hamburger {
-        display: block; /* Mostrar o botão em telas pequenas */
+    .desktop-only {
+        display: none; /* Esconder o dropdown em telas menores */
+    }
+
+    .mobile-only {
+        display: block; /* Mostrar o link de serviços em telas menores */
     }
 
     nav ul {
-        display: none; /* Esconder o menu em telas pequenas por padrão */
+        display: none; /* Esconder o menu completo em telas pequenas por padrão */
         flex-direction: column;
         gap: 10px;
         background-color: #3a2e29;

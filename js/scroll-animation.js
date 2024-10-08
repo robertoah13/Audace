@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const body = document.body;
 
-    menuToggle.addEventListener('click', function() {
-        body.classList.toggle('menu-open');
-    });
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            body.classList.toggle('menu-open');
+        });
+    }
 });

@@ -18,12 +18,12 @@
         </div>
         <!-- Botão para abrir o menu em dispositivos móveis -->
         <button id="menu-toggle" class="menu-hamburger">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i> <!-- Ícone do menu hambúrguer -->
         </button>
         <nav>
             <ul>
                 <li><a href="sobre.html">Quem Somos</a></li>
-                <li class="dropdown">
+                <li class="desktop-only dropdown">
                     <a href="#servicos">Serviços</a>
                     <ul class="dropdown-menu">
                         <li><a href="branding.html">Branding</a></li>
@@ -33,11 +33,13 @@
                         <li><a href="eventos.html">Eventos</a></li>
                     </ul>
                 </li>
+                <li class="mobile-only"><a href="#servicos">Serviços</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
+    
     
 
     <section class="hero">
