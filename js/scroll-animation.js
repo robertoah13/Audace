@@ -1,7 +1,7 @@
 // Salvar este arquivo como "scroll-animation.js" na pasta D:\audace-website\js
 
+// Adiciona a classe 'visible' aos elementos quando eles entram na área visível da tela
 document.addEventListener('DOMContentLoaded', function() {
-    // Script para a animação dos cards de serviço ao rolar a página
     const cards = document.querySelectorAll('.servico-card');
     
     function showCards() {
@@ -15,12 +15,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', showCards);
     showCards(); // Chama ao carregar a página para garantir que os elementos visíveis estejam visíveis
-
-    // Script para o menu-hambúrguer em dispositivos móveis
-    const menuToggle = document.getElementById('menu-toggle');
-    const body = document.body;
-
-    menuToggle.addEventListener('click', function() {
-        body.classList.toggle('menu-open');
-    });
 });
