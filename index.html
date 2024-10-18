@@ -11,22 +11,19 @@
 </head>
 <body>
     <header>
-        <div class="logo" style="text-align: center;">
+        <div class="logo">
             <a href="index.html">
                 <img src="images/AUDACE6.png" alt="Audace">
             </a>
         </div>
         <!-- Botão para abrir o menu em dispositivos móveis -->
-        <button id="menu-toggle" class="menu-hamburger">☰</button>
-
-            <i class="fas fa-bars"></i> <!-- Ícone do menu hambúrguer -->
-        </button>
+        <button id="menu-toggle" class="menu-hamburger" aria-label="Abrir menu">☰</button>
         <nav>
-            <ul>
+            <ul id="menu" class="menu">
                 <li><a href="sobre.html">Quem Somos</a></li>
                 <li class="desktop-only dropdown">
                     <a href="#servicos">Serviços</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" aria-label="Submenu de Serviços">
                         <li><a href="branding.html">Branding</a></li>
                         <li><a href="publicidade.html">Publicidade</a></li>
                         <li><a href="relacoes-publicas.html">Relações Públicas</a></li>
@@ -41,10 +38,7 @@
         </nav>
     </header>
     
-    
-
-    <section class="hero">
-        
+    <section class="hero" style="background: url('images/Patterns1.png') center/cover no-repeat; height: 300px; background-attachment: fixed;">
     </section>
 
     <section id="sobre" class="sobre">
@@ -54,36 +48,42 @@
 
     <section id="servicos" class="servicos">
         <h2>Serviços</h2>
+        <p>Oferecemos uma variedade de serviços para ajudar sua marca a se destacar no mercado. Confira abaixo nossos principais serviços:</p>
         <div class="servico-card">
             <a href="branding.html">
                 <img src="images/branding.jpg" alt="Branding" style="width: 100%; height: auto;" loading="lazy">
+                <p>Criação e fortalecimento da identidade da sua marca.</p>
             </a>
         </div>
         <div class="servico-card">
             <a href="publicidade.html">
                 <img src="images/publicidade.jpg" alt="Publicidade" style="width: 100%; height: auto;" loading="lazy">
+                <p>Campanhas criativas para aumentar a visibilidade da sua marca.</p>
             </a>
         </div>
         <div class="servico-card">
             <a href="relacoes-publicas.html">
                 <img src="images/pr.jpg" alt="Relações Públicas" style="width: 100%; height: auto;" loading="lazy">
+                <p>Conexão estratégica com o público e a mídia.</p>
             </a>
         </div>
         <div class="servico-card">
             <a href="social-media.html">
                 <img src="images/social-media.jpg" alt="Social Media" style="width: 100%; height: auto;" loading="lazy">
+                <p>Gestão de redes sociais para engajar e crescer sua audiência.</p>
             </a>
         </div>
         <div class="servico-card">
             <a href="eventos.html">
                 <img src="images/eventos.jpg" alt="Eventos" style="width: 100%; height: auto;" loading="lazy">
+                <p>Organização de eventos memoráveis para promover sua marca.</p>
             </a>
         </div>
     </section>
     
-
     <section id="contato" class="contato">
         <h2>Entre em Contato</h2>
+        <p>Gostaria de saber mais sobre nossos serviços ou iniciar um projeto conosco? Preencha o formulário abaixo e entraremos em contato com você.</p>
         <form action="#">
             <input type="text" name="nome" placeholder="Seu Nome" required>
             <input type="email" name="email" placeholder="Seu Email" required>
@@ -95,5 +95,20 @@
     <footer>
         <p>© 2024 Audace. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
+
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('menu-open');
+                menuToggle.classList.toggle('open');
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+

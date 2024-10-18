@@ -1,5 +1,9 @@
+.logo {
+    text-align: center;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #f2e6de; /* Cor suave para combinar com o estilo das artes */
     color: #3a2e29; /* Cor que dá contraste elegante */
     margin: 0;
@@ -18,10 +22,12 @@ header {
 
 header .logo img {
     max-height: 100px;
+    padding-right: 20px;
 }
 
 nav {
     position: relative;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -42,14 +48,14 @@ nav ul {
     top: 100%; /* Logo abaixo do item principal */
     left: 0;
     background-color: #3a2e29;
-    padding: 10px;
+    padding: 20px;
     list-style: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 .dropdown-menu li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .dropdown-menu li a {
@@ -79,19 +85,20 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 10px 10px;
     background: url('../images/Patterns1.png') center/cover no-repeat; /* Imagem de fundo para a seção hero */
     color: #fff;
     background-attachment: fixed;
+    height: 120px;
 }
 
 .hero h1 {
-    font-size: 3em;
-    font-family: 'Georgia', serif; /* Fonte elegante similar ao estilo das artes */
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .sobre, .servicos, .contato {
@@ -100,8 +107,8 @@ nav a:hover {
 }
 
 .sobre h2, .servicos h2, .contato h2, .servico-detalhe h2 {
-    font-size: 2.5em;
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -142,6 +149,29 @@ nav a:hover {
 .servicos .servico-card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicos .servico-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: #0c0a09;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.servicos .servico-card p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #dba087;
+    line-height: 1.6;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.servicos .servico-card a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
