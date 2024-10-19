@@ -216,27 +216,21 @@ footer {
     header {
         flex-direction: column; /* Empilhar o logo e o menu em telas pequenas */
     }
-}
-    nav ul {
 
+    nav ul {
         flex-direction: column; /* Colocar os itens do menu em coluna */
         gap: 10px; /* Reduzir o espaçamento entre itens do menu */
         display: none;
-
-        
         transition: all 0.3s ease;
-
         background-color: #3a2e29;
         padding: 10px;
         width: 100%;
         text-align: center;
-    
     }
+
     .menu-open nav ul {
-
         display: flex;
-
-    
+    }
 
     .hero {
         padding: 20px 10px; /* Reduzir o padding da seção hero em telas menores */
