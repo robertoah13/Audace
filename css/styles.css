@@ -234,7 +234,8 @@ footer {
     }
 
     .hero {
-        padding: 20px 10px; /* Reduzir o padding da seção hero em telas menores */
+        background-size: contain; /* Ou um valor específico para evitar ampliação excessiva */
+        background-position: center top;
     }
 
     .hero h1 {
