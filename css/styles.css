@@ -216,7 +216,7 @@ footer {
     header {
         flex-direction: column; /* Empilhar o logo e o menu em telas pequenas */
     }
-
+}
     nav ul {
 
         flex-direction: column; /* Colocar os itens do menu em coluna */
@@ -231,7 +231,7 @@ footer {
         width: 100%;
         text-align: center;
     
-
+    }
     .menu-open nav ul {
 
         display: flex;
