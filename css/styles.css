@@ -209,6 +209,7 @@ footer {
 .contato button:hover {
     background-color: #8c3a3a;
 }
+
 /* Estilos para telas menores - Dispositivos móveis */
 @media (max-width: 768px) {
     header {
@@ -216,8 +217,25 @@ footer {
     }
 
     nav ul {
-        flex-direction: column; /* Colocar os itens do menu em coluna */
-        gap: 10px; /* Reduzir o espaçamento entre itens do menu */
+        display: none; /* Esconder o menu completo em telas pequenas por padrão */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #3a2e29;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-open nav ul {
+        display: flex; /* Mostrar o menu ao clicar no botão */
+    }
+
+    .desktop-only {
+        display: none; /* Esconder o dropdown em telas menores */
+    }
+
+    .mobile-only {
+        display: block; /* Mostrar o link de serviços em telas menores */
     }
 
     .hero {
@@ -248,8 +266,19 @@ footer {
     .contato input, .contato textarea {
         width: 100%; /* Garantir que os campos do formulário ocupem toda a largura da tela */
     }
+
+    /* Exibir o botão de menu hambúrguer em dispositivos móveis */
+    .menu-hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2em;
+        color: #f2e6de;
+        cursor: pointer;
+    }
 }
-/* Estilo do botão de menu hamburguer */
+
+/* Estilo do botão de menu hambúrguer */
 .menu-hamburger {
     display: none;
     background: none;
@@ -266,29 +295,4 @@ footer {
 
 .mobile-only {
     display: none;
-}
-
-/* Exibir ou ocultar com media query para dispositivos móveis */
-@media (max-width: 768px) {
-    .desktop-only {
-        display: none; /* Esconder o dropdown em telas menores */
-    }
-
-    .mobile-only {
-        display: block; /* Mostrar o link de serviços em telas menores */
-    }
-
-    nav ul {
-        display: none; /* Esconder o menu completo em telas pequenas por padrão */
-        flex-direction: column;
-        gap: 10px;
-        background-color: #3a2e29;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu-open nav ul {
-        display: flex; /* Mostrar o menu ao clicar no botão */
-    }
 }
