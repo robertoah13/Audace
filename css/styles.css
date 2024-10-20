@@ -87,10 +87,13 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 10px 10px;
-    background: url('../images/Patterns1.png') center/cover no-repeat; /* Imagem de fundo para a seção hero */
+    background: url('../images/Patterns1.png') center/cover no-repeat;
     color: #fff;
     background-attachment: fixed;
-    height: 120px;
+    height: 300px; /* Ajuste conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero h1 {
@@ -271,7 +274,10 @@ footer {
     }
 
     .hero {
-        padding: 50px 20px; /* Reduzir o padding da seção hero em telas menores */
+        padding: 50px 20px;
+        background: url('../images/Patterns1.png') center/contain no-repeat;
+        background-attachment: scroll;
+        height: auto;
     }
 
     .hero h1 {
